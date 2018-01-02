@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bielo-Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($)
+        {
+            //scroll reset
+            $.scrollTo(0);
+            $('#link1').click(function(){$.scrollTo($('#about'), 500); });
+            $('#link2').click(function(){$.scrollTo($('#portfolio'), 500); });
+            $('#link3').click(function(){$.scrollTo($('#contact'), 500); });
+            $('.scrollup').click(function(){$.scrollTo($('body'), 1000); });
+        }
+        );
+        
+        //show scroll button
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>50) $('.scrollup').fadeIn();
+            else $('.scrollup').fadeOut();
+        }
+        );
+        
+        
+    </script>
+</head>
+
+<body>
+    <a href="#" class="scrollup"></a>
+    <div id="wrapper">
+        <div id="navbar">
+            <div class="logo"><a href="index.html">Bielo</a></div>
+            <div class="menu">
+                <div class="navbutton"><a id="link1" href="#">About me</a></div>
+                <div class="navbutton"><a id="link2" href="#">Portfolio</a></div>
+                <div class="navbutton"><a id="link3" href="#">Contact</a></div>
+            </div>
+        </div>
+    <div id="content">
+        <div id="about">
+        <div class="desc">
+            <h1>About me</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non viverra leo, in consequat dui. Suspendisse potenti. In sollicitudin magna lorem, quis gravida arcu faucibus id. Suspendisse luctus neque faucibus laoreet sollicitudin. Nam suscipit felis lectus, non lacinia nibh feugiat vel. Quisque et eros fringilla, mollis magna eget, volutpat arcu. Suspendisse tempus ornare quam. Aliquam a massa mi. Quisque ut luctus orci.</p>
+            <p>Proin rhoncus odio ut orci vehicula, quis posuere purus venenatis. Etiam at vehicula ligula, in feugiat neque. Donec vitae massa sed massa euismod porta. Donec vel orci dolor. Duis id urna tempus, consectetur dui ut, commodo erat. Proin commodo est id eros sodales porttitor. Aenean sed vehicula risus. </p>
+            </div>
+        <div class="foto"><img src="foto.png" alt="foto-profil"></div>
+        </div>
+        <div id="portfolio"><h1>Portfolio</h1>
+            <div class="card">
+                <div class="fotoweb">
+                <a href="https://codepen.io/Bielo7/pen/EvYBRG" target="_blank"><img src="portfolio1.PNG" alt="strona z portfolio, Papież, Bootstrap"></a>
+                </div>
+                <p>Strona z użyciem Bootstrap 3</p>
+            </div>
+            <div class="card">
+                <div class="fotoweb">
+                <a href="#"><img src="portfolio1.PNG" alt="strona z portfolio, Papież, Bootstrap"></a>
+                </div>
+                <p>Strona z użyciem Bootstrap 3</p>
+            </div>
+            <div class="card">
+                <div class="fotoweb">
+                <a href="#"><img src="portfolio1.PNG" alt="strona z portfolio, Papież, Bootstrap"></a>
+                </div>
+                <p>Strona z użyciem Bootstrap 3</p>
+            </div>
+              <div class="card">
+                <div class="fotoweb">
+                <a href="#"><img src="portfolio1.PNG" alt="strona z portfolio, Papież, Bootstrap"></a>
+                </div>
+                <p>Strona z użyciem Bootstrap 3</p>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Contact Me</h1>
+            <div class="contactme">
+        <div class="form">
+            <form>
+                <input type="text" name="name" placeholder="name"></br>
+            <input type="text" name="email" placeholder="e-mail"></br>
+            <textarea id="massage" rows="5" placeholder="massage"></textarea></br>
+            <button>Send</button>
+            </form>
+            </div>
+        <div class="info">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non viverra leo, in consequat dui. Suspendisse potenti. In sollicitudin magna lorem, quis gravida arcu faucibus id. Suspendisse luctus neque faucibus laoreet sollicitudin. Nam suscipit felis lectus, non lacinia nibh feugiat vel. Quisque et eros fringilla, mollis magna eget, volutpat arcu. Suspendisse tempus ornare quam. Aliquam a massa mi. Quisque ut luctus orci.</p>
+            <p>Proin rhoncus odio ut orci vehicula, quis posuere purus venenatis. Etiam at vehicula ligula, in feugiat neque. Donec vitae massa sed massa euismod porta. Donec vel orci dolor. Duis id urna tempus, consectetur dui ut, commodo erat. Proin commodo est id eros sodales porttitor. Aenean sed vehicula risus. </p>
+        </div>
+        </div>
+        </div>
+    </div>
+        <div id="footer">
+            <div class="footerinfo">Bielo &copy; 2017. All Rights Reversed</div>
+            <div class="socials">
+                <div class="sociale">
+                <div class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook"></i></a></div>
+                    <div class="github"><a href="https://github.com/" target="_blank"><i class="icon-github-circled"></i></a></div>
+                    <div class="youtube"><a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a></div>
+                    <div class="codepen"><a href="https://codepen.io/#" target="_blank"><i class="icon-codeopen"></i></a></div>
+                </div>
+                
+        </div>
+    </div>
+    
+</body>
+</html>
